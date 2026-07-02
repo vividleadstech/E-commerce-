@@ -36,7 +36,7 @@ function Layout({ children }) {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/E-commerce-">
       <AuthProvider>
         <CartProvider>
           <ToastContainer position="top-center" autoClose={3000} />
