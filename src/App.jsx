@@ -21,6 +21,7 @@ import OrderSuccess      from "./pages/OrderSuccess";
 import Footer            from "./components/Footer";
 import PromoBanner       from "./components/PromoBanner";
 import Testimonials      from "./components/Testimonials";
+import Blogs             from "./pages/Blogs";
 
 function Layout({ children }) {
   const [cartOpen, setCartOpen] = useState(false);
@@ -50,6 +51,7 @@ function App() {
             <Route path="/order-success" element={<Layout><OrderSuccess /></Layout>} />
             <Route path="/login"  element={<Login />} />
             <Route path="/signup" element={<Signup />} />
+             <Route path="/blogs"  element={<Layout><Blogs /></Layout>} />
           </Routes>
         </CartProvider>
       </AuthProvider>
